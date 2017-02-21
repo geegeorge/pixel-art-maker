@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var names = ['Charizard', 'Bulbasaur', 'Onyx', 'Mewtwo', 'Chansey'];
+            var $section = $('section');
+
+            $('#add-pokemon').on('click', function() {
+                console.log('add clicked')
+
+                var name = names[Math.floor(Math.random() * names.length)];
+                var $div = $(`<div class="pokemon">${name}</div>`);
+                $section.append($div);
+            });
+            $('section').on('click', '.pokemon', function(event) {
+                var $target = $(event.target);
+                $target.remove();
+                console.log(`Buh-bye, ${$target.text()}!`);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="add-pokemon">Add a random Pokémon!</button>
+
+    <section>
+        <div class="pokemon">Pikachu</div>
+        <!-- Append Pokémon here -->
+    </section>
+</body>
+
+</html>

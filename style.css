@@ -1,0 +1,72 @@
+.colors {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+}
+.clearfix{
+  clear:both;
+}
+.picker{
+  width: 25%;
+  float:left;
+}
+#red{
+  background-color: red;
+  }
+#yellow{
+  background-color: yellow;
+}
+#orange{
+  background-color: orange;
+}
+#green{
+  background-color: green;
+}
+#black{
+  background-color: black;
+}
+#blue{
+  background-color: blue;
+}
+#purple{
+  background-color: purple;
+}
+#gray{
+  background-color: gray;
+}
+#tan{
+  background-color: tan;
+}
+/*body {
+  background: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}*/
+
+
+/*.top{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  text-shadow: 3px 2px white;
+  top: 5px;
+  background-color: orange;
+  text-align: center;
+  border: 1px solid black;
+}*/
+
+
+/*.canvas{
+  width: 80px;
+  height: 80px;
+  background-color: grey;
+}
+.pixel{
+  width: 5px;
+  height: 5px
+  float:left;
+}*/
